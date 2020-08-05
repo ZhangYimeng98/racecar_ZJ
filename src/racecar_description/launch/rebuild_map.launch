@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+    
+    <node name="ZJ_play" pkg="zj_pkg" type="pub_point.py"/>             #ZJ_play.py
+
+
+</launch>

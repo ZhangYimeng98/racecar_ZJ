@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find zj_hector)/launch/hector_mapping.launch"/>
+
+    <include file="$(find zj_hector)/launch/geotiff_mapper.launch">
+
+    </include>
+
+ </launch>

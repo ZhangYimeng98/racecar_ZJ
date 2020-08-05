@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find racecar_description)/launch/racecar.launch"></include>            #racecar.launch
+
+
+
+    <node name="rviz" pkg="rviz" type="rviz"                                                
+          args="-d $(find racecar_description)/rviz/racecar_mapping.rviz" required="true">     #rviz
+    </node>
+
+
+    <node name="ZJ_keyboard_remote" pkg="zj_pkg" type="ZJ_keyboard_remote.py"/>             #ZJ_keyboard_remote.py
+    
+    <include file="$(find zj_hector)/launch/hector_slam.launch"/>                           #hector_slam.launch
+
+
+</launch>
